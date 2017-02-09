@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 style="color:white;">Hello, and welcome to Django-J's site!</h1>
+        <p style="color:white;">This is a test template where Django J will illustrate his brilliance in coding to idiots all over the world.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+ 		<div class="col-sm-3">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-sm-3">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="{% url "aboutus" %}" role="button">About Us &raquo;</a></p>
+        </div>
+
+        <div class="col-sm-3">
+        <h2>Get it Today!</h2>
+        <p>Django J's Tip Of The Day</p>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="PAA3PN4WUYMT2">
+<table>
+<input type="hidden" name="on0" value="Django J's Tip Of The Day"> 
+
+<select class="form-control" name="os0">
+	<option value="1 Day Tip">1 Day Tip 40,00 NOK</option>
+	<option value="2 Days Tip">2 Days Tip 70,00 NOK</option>
+	<option value="3 Days Tip">3 Days Tip 100,00 NOK</option>
+</select> </td></tr>
+
+</table>
+
+<input type="hidden" name="currency_code" value="NOK"> <br/>
+	<input type='submit' class='btn btn-success btn-block'>
+</form>
+</div>
+
+       
+
+{% endblock %}
+
+
